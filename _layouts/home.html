@@ -1,0 +1,89 @@
+--- 
+layout: outer 
+---
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-8 text-center my-4 mx-auto">
+				<object type="image/svg+xml" data="/static/img/logo.svg" class="w-75" id="pbt_header_logo">
+				  Phone Box Theatre Logo
+				</object>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-8 offset-lg-2" id="section_intro">
+				<h1>{{ content }}</h1>
+				<div class="w-100 text-center">
+					<a class="mx-auto btn btn-primary btn-lg rounded-0 my-3" role="button" href="mailto:hello@phoneboxtheatre.co.uk" title="Email Phone Box Theatre">Come say hi: <strong>hello@phoneboxtheatre.co.uk</strong></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="section_team">
+		<div class="row my-3">
+			<div class="col text-center">
+				<h1 id="team">Phone Box Team</h1>
+				<hr class="w-25">
+			</div>
+		</div>
+		<div class="row mx-lg-5">
+			{{ site.people }}
+			{% for person in site.data.people %}
+			<div class="col-12 col-lg-4">
+				<div class="row d-flex">
+					<div class="col">
+						<div class="float-right text-center" style="width:40%">
+							<img src="{{ person.headshot }}" class="pl-2 mb-2 w-100 rounded-circle" alt="Picture of {{ person.name }}">
+							<a href="mailto:{{ person.email }}@phoneboxtheatre.co.uk" title="Contact {{ person.name }} via email"><i aria-label="Email {{ person.name }}" class="fa fa-envelope fa-fw fa-lg"></i><span class="sr-only">Email {{ person.name }}</a>
+							{% for c in person.contact %}
+								<a href="{{ c.link }}"><span class="sr-only">Contact {{ person.name }} on {{ c.type }}</span><i  class="{{ c.icon }} fa-fw fa-lg"></i></a>
+							{% endfor %}
+						</div>
+						<h2>{{ person.name }}<br><small class="text-muted font-weight-bold">{{ person.role }}</small></h2>
+						{{ person.bio | markdownify }}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="container-fluid bg-primary mt-3" id="section_shows">
+		<div class="row my-3">
+			<div class="col text-center">
+				<h1 id="shows">Phone Box Shows</h1>
+				<hr class="w-25">
+			</div>
+		</div>
+		<div class="row mx-lg-5 mb-4">
+			<div class="col">
+				<h2>
+					INTERFACE by Thomas Heath<br>
+					<small>INTERFACE will be performed at The Nottingham New Theatre once theatres are able to re-open following the Covid-19 pandemic.</small>
+				</h2>
+				<p class="ml-4"><em>Bella, Marcus and Danni struggle to communicate through the digital isolation they’ve found themselves trapped in. Bella tries to help two desperate customers; Marcus watches the people he loves slip by; and Danni finds a hole inside her that absorbs her most precious memories. In the midst of their distorted world, the three attempt to break through the endless streams of media that corrupt their existence.</em></p>
+
+				<p class="ml-4">INTERFACE <em>explores the facets of human beings who are desperate to have one real, tangible conversation before they are swept away entirely by our devastating obsession with technology.
+				</em></p>
+				<p>Incorporating live audio playback with traditional performance, INTERFACE belongs to black-box studio spaces of any size and is for anyone who doesn't want to feel alone anymore.</p>
+				<h3>INTERFACE will be available for tour booking once venues reopen following Covid-19. If you would like us to bring it to your venue, please <a href="/contact/">get in touch</a>.</h3>
+			</div>
+		</div>
+		<hr class="w-50 pb-4 mb-4">
+		<div class="row mx-lg-5">
+			<div class="col">
+				<h2>PAREIDOLIA 2020 by Daniel McVey</h2>
+				<div class="ml-4"><p><em>
+					Three people have decided to say something. Something important to them, supposedly. But things are going wrong (and it’s not just their internet bandwidth).
+				</em></p></div>
+				<div class="ml-4"><p class="ml-4"><em>
+						No matter how hard they try they can’t agree on a way to say it.<br>
+						No matter how hard they try they can’t seem to do it right, the way they planned.<br>
+						And no matter how hard they try: Z can’t help but be a Tennyson poem, X can’t help but be a Russian antihero, and Y can’t help but be the world of L. Frank Baum.
+				</em></p></div>
+				<div class="ml-4"><p><em>
+					Things are going to have to change.
+				</em></p></div>
+				<p>PAREIDOLIA 2020 is a 60-minute short film being recorded in isolation during the Covid-19 pandemic, and set for release in August 2020. It combines monologues, video conferences and public domain footage.</p>
+			</div>
+		</div>
+	</div>

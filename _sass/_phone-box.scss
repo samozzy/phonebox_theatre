@@ -1,0 +1,35 @@
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
+
+// Colour Palette
+$pb-sea-serpent: #00a0a0;
+$pb-off-white: #FEF7F1;
+$pb-navy: #23395B;
+
+.bg-primary, .btn-primary {
+	color: $pb-off-white;
+	text-color: $pb-off-white;
+}
+.bg-primary a {
+	color: $pb-navy;
+	&:hover {
+		color: #000;
+	}
+}
+
+.bg-primary hr {
+	border-color: darken($pb-sea-serpent, 10%);
+}
+
+.bg-secondary a:hover {
+	color: lighten($pb-sea-serpent, 20%);
+}
+
+// .container-fluid {
+// 	@extend div.container-fluid 
+// }
+// footer {
+// 	@extend div.footer 
+// }
