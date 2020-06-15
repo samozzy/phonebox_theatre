@@ -21,14 +21,14 @@
   	{{ content }} 
 	<div class="container-fluid footer mt-auto" id="section_footer">
 		<div class="row bg-secondary align-items-center">
-			<div class="col-lg-4 text-lg-left text-center">
-				<p class="small text-light my-auto">&copy; Phone Box Theatre, {{ 'now' | date: "%Y" }}</p>
-				<p class="small text-light my-auto">Web Design by <a href="https://web.samosborne.me/" title="Sam Osborne Web Design">Sam Osborne</a></p>
-			</div>
-			<div class="col-md text-lg-right text-center py-4">
+			<div class="col-md text-lg-right text-center py-4 order-lg-2 order-1">
 				{% for s in site.contacts %}
 				<a href="{{ s.link }}"><i class="fa-3x fa-fw {{ s.icon }}"></i><span class="sr-only">Contact Phone Box Theatre via {{ s.name }}</span></a>
 				{% endfor %}
+			</div>
+			<div class="col-lg-4 text-lg-left text-center order-lg-1 order-2">
+				<p class="small text-light my-auto">&copy; Phone Box Theatre, {{ 'now' | date: "%Y" }}</p>
+				<p class="small text-light my-auto">Web Design by <a href="https://web.samosborne.me/" title="Sam Osborne Web Design">Sam Osborne</a></p>
 			</div>
 		</div>
 	</div>
