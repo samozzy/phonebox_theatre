@@ -2,7 +2,9 @@
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
 
-
+html {
+	scroll-behavior: smooth;
+}
 // Colour Palette
 $pb-sea-serpent: #00a0a0;
 $pb-off-white: #FEF7F1;
