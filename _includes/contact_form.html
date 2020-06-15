@@ -15,3 +15,14 @@
 
   <button class="btn btn-primary btn-block btn-lg" role="button" type="submit">Send</button>
 </form>
+
+  <script>
+  document.body.addEventListener('keydown', function(e) {
+      if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
+          var target = e.target;
+          if(target.form) {
+              target.form.submit();
+          }
+      }
+  });
+  </script>
