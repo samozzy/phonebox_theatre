@@ -1,6 +1,6 @@
 ---
 layout: inner
-permalink: /contact
+permalink: /contact/
 title: Contact Us
 --- 
 

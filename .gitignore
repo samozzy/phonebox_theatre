@@ -1,5 +1,7 @@
-# .bundle/
+.bundle/
 .jekyll-cache/
+.jekyll-metadata
+.sass-cache/
 vendor/
 _site/
 # Local Netlify folder
