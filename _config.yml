@@ -49,6 +49,9 @@ plugins:
 sass:
     sass_dir: _sass
     style: expanded 
+    load_paths:
+      - _sass 
+      - vendor/bundle/ruby/*/gems/bootstrap*/assets/stylesheets/
 
 collections:
   content:
