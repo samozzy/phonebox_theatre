@@ -2,16 +2,22 @@
 layout: outer 
 --- 
 
-	<div class="container-fluid">
+	<div class="container-fluid {% if layout.body_bg %}{{ layout.body_bg }}{% endif %}">
 		<div class="row">
 			<div class="col-8 offset-lg-2 text-center my-4 mx-auto">
-				<a href="/"><img src="{{ site.logo_path }}" class="w-25" alt="Phone Box Theatre logo">
+				<a href="/"><img src="{% if layout.alt_logo %}{{ site.logo_path_alt }}{% else %}{{ site.logo_path }}{% endif %}" class="w-25" alt="Phone Box Theatre logo">
 				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 text-center">
-				<h1 class="display-4">{{ page.title }}</h1>
+				<h1 class="display-4">
+					{% if page.collection == 'projects' %}
+						{{ page.title | upcase }}<small class="font-weight-light mt-0">{% if page.playwright %}<br>by {{ page.playwright }}</small>{% endif %}
+					{% else %}
+						{{ page.title }}
+					{% endif %}
+				</h1>
 			</div>
 		</div>
 		<div class="row">
