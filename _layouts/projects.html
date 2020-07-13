@@ -1,0 +1,35 @@
+--- 
+layout: inner
+body_bg: bg-primary
+alt_logo: true 
+---
+
+<h1>{{ page.project_date }}</h1>
+
+{{ page.performed | markdownify }}
+
+<div class="ml-4"><em>{{ page.synopsis | markdownify | linebreaks }}</em></div>
+
+{{ content | markdownify }}
+
+<hr>
+
+{% assign other_projects = site.projects %}
+{% if other_projects.size > 1 %}
+	<h2>Phone Box Shows</h2>
+	<div class="row mb-4">
+		<div class="card-deck mx-0">
+			{% for project in site.projects limit: 3 %}
+				<div class="card bg-secondary p-0">
+					<div class="card-body p-0">
+						 <a href="{{ project.permalink }}" role="button" class="btn h-100 text-light btn-block btn-secondary p-3"> 
+								<h3>{{ project.title | upcase }}{% if project.playwright %} by {{ project.playwright }}{% endif %}</h3>
+								<p class="mb-1">{{ project.performed }}</p>
+						</a>
+					</div>
+					<div class="card-footer text-center"><span>{{ project.project_date }}</span></div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endif %}

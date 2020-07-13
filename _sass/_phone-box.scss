@@ -29,9 +29,6 @@ $pb-navy: #23395B;
 	color: lighten($pb-sea-serpent, 20%);
 }
 
-// .container-fluid {
-// 	@extend div.container-fluid 
-// }
-// footer {
-// 	@extend div.footer 
-// }
+blockquote {
+	@extend .ml-4;
+}

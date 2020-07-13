@@ -19,6 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  samozzy
 logo_path: /static/img/phone_box_logo.png 
+logo_path_alt: /static/img/phone_box_logo_alt.png
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,6 +56,9 @@ collections:
   content:
     output: true
     permalink: :path/
+  projects:
+    output: true 
+    permalink: :path/
 permalink: pretty 
 
 defaults:
@@ -63,3 +67,7 @@ defaults:
       type: content
     values:
       layout: default
+  - scope: 
+      type: projects
+    values: 
+      layout: projects 
