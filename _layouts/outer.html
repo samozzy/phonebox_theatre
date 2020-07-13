@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
-    <title>{{ title | default: "Phone Box Theatre" }}</title>
+    <title>{% if page.title %}{{ page.title }} | Phone Box Theatre{% else %}Phone Box Theatre{% endif %}</title>
 
   </head>
   <body class="d-flex flex-column h-100">
