@@ -1,10 +1,23 @@
 ---
 ---
 
+// Project variables 
+$pbt-projects: (
+	{% for project in site.projects %}
+		"{{ project.title | slugify }}": {{ project.colour }},
+	{% endfor %}
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
 @import "phone-box";
 
 @import "pb_bootstrap_variables";
-
 // Bootstrap selective includes...
 
 // @import "bootstrap/scss/bootstrap";
