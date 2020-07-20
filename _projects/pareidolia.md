@@ -43,12 +43,15 @@ team:
   - name: Daniel McVey
     role: Playwright and Director
     headshot: /static/img/headshots/daniel.jpg
+    headshot_attr: The Nottingham New Theatre
   - name: Laura Wolczyk
     role: Producer
     headshot: /static/img/headshots/laura.jpg
+    headshot_attr: The Nottingham New Theatre
   - name: Sam Osborne
     role: Co-Producer
     headshot: /static/img/headshots/sam.jpg
+    headshot_attr: Miguel Barrulas
 --- 
 
 PAREIDOLIA 2020 is a 60-minute short film being recorded in isolation during the Covid-19 pandemic, and set for release in August 2020. It combines monologues, video conferences and public domain footage.
