@@ -13,6 +13,9 @@ contacts:
   - name: Instagram
     link: https://Instagram.com/phoneboxtheatre/
     icon: fab fa-instagram 
+  - name: YouTube
+    link: https://www.youtube.com/channel/UCsZOUbIIFO02zx7Mu92dqJw
+    icon: fab fa-youtube 
 description: >- # this means to ignore newlines until "baseurl:"
   Phone Box Theatre is a new, independent theatre company based in the East Midlands. We create work focused on connecting others with high quality technical design.
 baseurl: "" # the subpath of your site, e.g. /blog
