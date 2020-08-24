@@ -12,6 +12,11 @@ sections:
 - type: document
   path: _data/people.yml
   label: People
+- type: directory
+  path: _projects
+  label: Projects
+  create: all
+  match: "**/*"
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
