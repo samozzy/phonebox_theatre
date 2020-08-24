@@ -59,4 +59,4 @@ team:
   headshot_attr: Miguel Barrulas
 
 ---
-PAREIDOLIA 2020 is a 60-minute short film being recorded in isolation during the Covid-19 pandemic, and set for release in August 2020. It combines monologues, video conferences and public domain footage.
+PAREIDOLIA 2020 is a 60-minute short film being recorded in isolation during the Covid-19 pandemic, and set for release in September 2020. It combines monologues, video conferences and public domain footage.
