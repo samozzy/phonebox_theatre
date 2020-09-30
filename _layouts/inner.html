@@ -18,6 +18,16 @@ layout: outer
 						{% else %}
 							{{ page.title | upcase }}<small class="font-weight-light mt-0">{% if page.playwright %}<br>by {{ page.playwright }}</small>{% endif %}
 						{% endif %}
+						{% if page.external_link %}
+							<br>
+							<a class="btn btn-dark btn-lg rounded-0 mt-3 text-light text-uppercase" role="button" href="{{ page.external_link }}">{{ page.external_link_text | default:"See more" }}</a>
+						{% endif %}
+						{% if page.donate %}
+							<br>
+							<a class="btn btn-dark btn-lg rounded-0 mt-3 text-light" role="button" href="{% link _content/donate.md %}">
+								<img alt="Square" width="22" height="22" class="img-responsive my-auto" src="/static/img/square_white.png"> DONATE (via Square)
+							</a>
+						{% endif %}
 					{% else %}
 						{{ page.title }}
 					{% endif %}

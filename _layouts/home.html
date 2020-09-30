@@ -12,8 +12,10 @@ layout: outer
 			<div class="col-12 col-lg-8 offset-lg-2" id="section_intro">
 				<h1>{{ content }}</h1>
 				<div class="w-100 text-center">
-					<a class="mx-auto btn bg-pareidolia-2020 btn-lg rounded-0 my-3" role="button" href="{% link _projects/pareidolia.md %}">We're currently working on <strong>PAREIDOLIA 2020</strong> &mdash; take a look</a><br>
-					<a class="mx-auto btn btn-outline-primary btn-lg rounded-0 mb-3" role="button" href="#team"><i class="fa fa-fw fa-arrow-down" aria-hidden="True"></i>&nbsp;Or scroll to learn more about us...</a>
+					{% assign pareidolia = site.projects | where: "permalink", "/pareidolia/" | first %}
+					<a class="mx-auto w-75 btn bg-pareidolia-2020 btn-lg rounded-0" role="button" href="{{ pareidolia.external_link }}"><strong>PAREIDOLIA 2020</strong> is available to watch <strong>online, for free</strong> from 30th September until 31st October. <br><strong class="text-uppercase">Watch now</strong> <i class="fab fa-youtube"></i></a><br>
+					<a class="mx-auto btn w-50 bg-pareidolia-2020 btn-lg rounded-0 my-3" role="button" href="{% link _projects/pareidolia.md %}">Read more about <strong>PAREIDOLIA 2020</strong></a><br>
+					<a class="mx-auto btn w-50 btn-outline-primary btn-lg rounded-0" role="button" href="#team"><i class="fa fa-fw fa-arrow-down" aria-hidden="True"></i>&nbsp;Or scroll to learn more about us...</a>
 				</div>
 			</div>
 		</div>
