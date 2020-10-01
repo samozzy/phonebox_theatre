@@ -7,7 +7,7 @@ banner: "/static/pareidolia/pareidolia_banner_text.png"
 playwright: Daniel McVey
 project_date: September 2020
 donate: true
-external_link: https://youtu.be/j6lHmlYH0z8
+external_link: "/watch/"
 external_link_text: "<i class='fab fa-youtube'></i>&nbsp;Watch from 9PM 30th September"
 performed: PAREIDOLIA 2020 will premiere online on 30th September 2020, and be available
   until 31st October 2020.
