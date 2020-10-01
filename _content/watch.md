@@ -54,9 +54,9 @@ Music from FreeMusicArchive:
 'Children Toy March' by Princes Orchestra 
 
 Music from Soundcloud:
-'Still Awake' by Ghostrifter Official (soundcloud.com/ghostrifter-official);
-'i won’t let anyone hurt you' by Barradeen (soundcloud.com/barradeen);
-'Manus' and ‘Heaven’ by Monarch (soundcloud.com/user-713604169);
+'Still Awake' by Ghostrifter Official (soundcloud.com/ghostrifter-official)[https://soundcloud.com/ghostrifter-official];
+'i won’t let anyone hurt you' by Barradeen (soundcloud.com/barradeen)[https://soundcloud.com/barradeen];
+'Manus' and ‘Heaven’ by Monarch (soundcloud.com/user-713604169)[https://soundcloud.com/user-713604169]
 
 Sound effects from Freesound.org:
 'FM radio tuning' by MrAuralization;
