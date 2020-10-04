@@ -8,7 +8,7 @@ title: Watch
 
 <div class="full-column  mb-4">
 <a class="btn btn-dark text-center full-column btn-lg rounded-0 mt-3 text-light" role="button" href="{% link _content/donate.md %}">
-<img alt="Square" width="22" height="22" class="img-responsive my-auto" src="/static/img/square_white.png"> DONATE (via Square)
+ DONATE (via Square or PayPal)
 </a>
 </div>
 
