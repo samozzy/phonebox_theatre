@@ -4,6 +4,7 @@ permalink: /provocation/
 title: Provocation
 colour: "#FCB856"
 banner: /static/provocation/provocation_banner_text.png
+poster: /static/provocation/poster.png
 playwright: Thomas Heath
 project_date: November 2020
 external_link: "https://www.whitebeartheatre.co.uk/whatson/SHORTS%3A-A-Festival-of-New-Writing"

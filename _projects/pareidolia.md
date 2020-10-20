@@ -4,6 +4,7 @@ permalink: "/pareidolia/"
 title: Pareidolia 2020
 colour: "#C5A4FA"
 banner: "/static/pareidolia/pareidolia_banner_text.png"
+poster: /static/pareidolia/poster.png
 playwright: Daniel McVey
 project_date: September 2020
 donate: true
