@@ -30,7 +30,7 @@ $pb-navy: #23395B;
     	font-weight: 300;
     }
   }
-  .card-footer.#{$name} {
+  .card-footer.#{$name}, .border-#{$name} {
   	border-color: $color !important;
   }
   a.bg-#{$name} {
@@ -41,7 +41,7 @@ $pb-navy: #23395B;
 }
 
 .project-header {
-	height: 5rem;
+	min-height: 5rem;
 	border-top-left-radius: 0.25rem !important;
     border-top-right-radius: 0.25rem !important;
     &.card {
@@ -52,7 +52,13 @@ $pb-navy: #23395B;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 100%;
+	height: 240px;
+}
+
+.project-text {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
 }
 
 // Contrast tweaks
