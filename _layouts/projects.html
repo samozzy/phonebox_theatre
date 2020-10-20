@@ -38,17 +38,10 @@ alt_logo: true
 		<div class="card-deck mx-0 h-100 col">
 			{% assign projects = site.projects | project_date_sort | reverse %}
 			{% for project in projects %}
+			 <!-- <img src="{{ project.poster }}" /> -->
 				{% if num_listed >= 2 %}{% break %}{% endif %}
 				{% unless project.permalink == page.permalink %}
-					<div class="card bg-secondary p-0 mx-2 border-{{ project.title | slugify }}">
-						<a class="project-header bg-{{ project.title | slugify }}" href="{{ project.permalink }}" title="{{ project.title }}" aria-label="{{ project.title }}">
-							<div class="project-background" style="background-image: url({{ project.banner }});"></div>
-						</a>
-						<div class="card-body">
-							<p class="mb-1">{{ project.performed }}</p>
-						</div>
-						<div class="card-footer text-center {{ project.title | slugify }}"><span>{{ project.project_date }}</span></div>
-					</div>
+					{% include project_button.html project=project %}
 					{% assign num_listed = num_listed | plus: 1 %}
 				{% endunless %}
 			{% endfor %}

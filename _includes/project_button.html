@@ -1,0 +1,6 @@
+					<div class="card rounded-0 shadow bg-secondary p-0 mx-2 border-{{ project.title | slugify }}">
+						<a class="rounded-0 project-header bg-{{ project.title | slugify }}" href="{{ project.permalink }}" title="{{ project.title }}" aria-label="{{ project.title }}">
+							<div class="project-background w-100" style="{% if project.poster %}background-image: url({{ project.poster }}); background-size: cover;{% else %}background-image: url({{ project.banner }}); background-size: contain;{% endif %}"></div>
+							<div class="project-text btn btn-primary rounded-0 text-center {{ project.title | slugify }}"><span>{{ project.link_text | default: "See more" }}</span></div>
+						</a>
+					</div>
