@@ -4,11 +4,6 @@ layout: outer
 
     <div class="container-fluid">
 		<div class="row">
-			<div class="col-8 text-center my-4 mx-auto">
-				<a href="/"><img src="{{ site.logo_path }}" class="w-75" alt="Phone Box Theatre Logo"></a>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-12 col-lg-8 offset-lg-2" id="section_intro">
 				<h1>{{ content }}</h1>
 				<div class="w-100 text-center">
@@ -20,21 +15,7 @@ layout: outer
 			</div>
 		</div>
 	</div>
-	<hr class="w-25">
-	<div class="container-fluid" id="section_team">
-		<div class="row my-3">
-			<div class="col text-center">
-				<h1 id="team" class="display-3">Phone Box Team</h1>
-			</div>
-		</div>
-		<div class="row mx-lg-5">
-			{{ site.people }}
-			{% for person in site.data.people %}
-				{% include person.html person=person phonebox=true headshot_class="headshot-pbt" %}
-			{% endfor %}
-		</div>
-	</div>
-	<div class="container-fluid bg-primary" id="section_shows">
+	<div class="container-fluid bg-primary pb-4 mt-3" id="section_shows">
 		<div class="row pt-4">
 			<div class="col text-center">
 				<h1 id="shows" class="display-3">Phone Box Shows</h1>
@@ -46,6 +27,19 @@ layout: outer
 				<div class="col-md-4 col-12 mb-4">
 					{% include project_button.html project=project %}
 				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="container-fluid" id="section_team">
+		<div class="row my-3">
+			<div class="col text-center">
+				<h1 id="team" class="display-3">Phone Box Team</h1>
+			</div>
+		</div>
+		<div class="row mx-lg-5">
+			{{ site.people }}
+			{% for person in site.data.people %}
+				{% include person.html person=person phonebox=true headshot_class="headshot-pbt" %}
 			{% endfor %}
 		</div>
 	</div>

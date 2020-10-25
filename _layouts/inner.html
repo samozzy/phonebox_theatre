@@ -3,12 +3,6 @@ layout: outer
 --- 
 
 	<div class="container-fluid {% if layout.body_bg %}{{ layout.body_bg }}{% endif %}">
-		<div class="row">
-			<div class="full-column text-center my-4 mx-auto">
-				<a href="/"><img src="{% if layout.alt_logo %}{{ site.logo_path_alt }}{% else %}{{ site.logo_path }}{% endif %}" class="w-25" alt="Phone Box Theatre logo">
-				</a>
-			</div>
-		</div>
 		<div class="row {% if page.collection == 'projects' %}project-title bg-{{ page.title | slugify }} {% if page.dark_title %}text-dark{% endif %}{% endif %}">
 			<div class="full-column text-center">
 				<h1 class="display-4">

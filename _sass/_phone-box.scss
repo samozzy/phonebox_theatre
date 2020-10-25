@@ -17,6 +17,9 @@ $pb-navy: #23395B;
 .bg-secondary a:hover {
 	color: lighten($pb-sea-serpent, 20%);
 }
+.bg-pb-navy {
+	background: $pb-navy;
+}
 
 // Projects 
 .project-title { 
@@ -85,6 +88,35 @@ blockquote {
 
 .full-column {
 	@extend .col, .col-lg-8, .offset-lg-2;
+}
+
+.hero-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	min-height: 45vh;
+	@media only screen and (min-width: map-get($grid-breakpoints, "md")){
+		min-height: 60vh;
+	}
+}
+// Navigation
+.brand-mobile {
+  @extend .ml-2, .d-block, .d-md-none, .navbar-brand;
+}
+.brand-large {
+  @extend .navbar-brand, .d-none, .d-md-block;
+}
+
+// Typography
+.nav-item {
+	font-size: 1.5em;
+	font-weight: 300;
+	.nav-link {
+		color: $pb-off-white !important;
+	}
+	&.active {
+		font-weight: 500;
+	}
 }
 
 // Headshots
