@@ -111,11 +111,18 @@ blockquote {
 }
 
 .hero-image {
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: top;
-	min-height: 45vh;
+	background-position: 0 4em;
+	background-attachment: fixed;
+	min-height: 25vh;
+	@media only screen and (min-width: map-get($grid-breakpoints, "sm")){
+		min-height: 40vh;
+	}
 	@media only screen and (min-width: map-get($grid-breakpoints, "md")){
+		background-position: 0 7em;
+	}
+	@media only screen and (min-width: map-get($grid-breakpoints, "xl")){
 		min-height: 60vh;
 	}
 }
