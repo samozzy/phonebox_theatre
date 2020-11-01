@@ -57,6 +57,7 @@ sass:
     load_paths:
       - _sass 
       - vendor/bundle/ruby/*/gems/bootstrap*/assets/stylesheets/
+      - /opt/build/cache/bundle/ruby/*/gems/bootstrap*/assets/stylesheets/
 
 collections:
   content:
