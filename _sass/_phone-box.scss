@@ -55,13 +55,23 @@ $pb-navy: #23395B;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
 	height: 240px;
 }
 
 .project-text {
 	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
+	bottom: 0;
+	right: 0;
+
+	&.no-text {
+		bottom: 1rem;
+		right: 1rem;
+	}
+}
+
+.team-headshot {
+	border-left: 25px solid $pb-sea-serpent;
 }
 
 // Contrast tweaks
