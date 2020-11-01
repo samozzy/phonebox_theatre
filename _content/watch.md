@@ -2,6 +2,7 @@
 layout: inner
 permalink: "/watch/"
 title: Watch
+published: false
 
 ---
 <p class="text-center h2"><strong><a href="{% link _projects/pareidolia.md %}">PAREIDOLIA 2020</a></strong> by Daniel McVey, available to watch until 31st October</p>

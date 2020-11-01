@@ -7,10 +7,7 @@ banner: "/static/pareidolia/pareidolia_banner_text.png"
 playwright: Daniel McVey
 project_date: September 2020
 donate: true
-external_link: "/watch/"
-external_link_text: "<i class='fab fa-youtube'></i>&nbsp;Watch from 9PM 30th September"
-performed: PAREIDOLIA 2020 can be watched online, for free, from 30th September 2020
-  until 31st October 2020.
+performed: PAREIDOLIA 2020 was available for free on YouTube from 30th September - 31st October, 2020
 synopsis: |
   Three people have decided to say something. Something important to them, supposedly. But things are going wrong (and it’s not just their internet bandwidth).
 
@@ -63,4 +60,4 @@ team:
   headshot_attr: Miguel Barrulas
 
 ---
-PAREIDOLIA 2020 is a 75-minute film, recorded and produced in isolation during the Covid-19 pandemic. It was released on 30th September, 2020, and can be watched online until 31st October. It combines monologues, video conferences and public domain footage.
+PAREIDOLIA 2020 is a 75-minute film, recorded and produced in isolation during the Covid-19 pandemic. It was released on 30th September, 2020, and was available online until 31st October. It combines monologues, video conferences and public domain footage.
