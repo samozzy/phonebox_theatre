@@ -24,14 +24,12 @@ layout: outer
 		{% assign projects = site.projects | project_date_sort | reverse %}
 		<div class="row no-gutters">
 			{% for project in projects %}
-				<div class="col-md-4 col-12 mb-4">
-					{% include project_button.html project=project %}
-				</div>
+				{% include project_button.html project=project %}
 			{% endfor %}
 		</div>
 	</div>
 	<div class="container-fluid" id="section_team">
-		<div class="row my-3">
+		<div class="row my-3 pt-3">
 			<div class="col text-center">
 				<h1 id="team" class="display-3">Phone Box Team</h1>
 			</div>
@@ -39,7 +37,8 @@ layout: outer
 		<div class="row mx-lg-5">
 			{{ site.people }}
 			{% for person in site.data.people %}
-				{% include person.html person=person phonebox=true headshot_class="headshot-pbt" %}
+				{% include person.html person=person phonebox=true excerpt=true headshot_class="headshot-pbt" %}
 			{% endfor %}
+			<a class="btn btn-primary btn-block btn-lg rounded-0 mb-4" role="button" href="/about/">Read more about the team</a>
 		</div>
 	</div>
