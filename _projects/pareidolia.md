@@ -3,13 +3,10 @@ layout: projects
 permalink: "/pareidolia/"
 title: Pareidolia 2020
 colour: "#C5A4FA"
-banner: "/static/pareidolia/pareidolia_banner_text.png"
-poster: /static/pareidolia/poster.png
+hero_image: "/static/pareidolia/19.png"
+poster: /static/pareidolia/poster-portrait.jpg
 playwright: Daniel McVey
 project_date: September 2020
-donate: true
-external_link: "/watch/"
-external_link_text: "<i class='fab fa-youtube'></i>&nbsp;Watch from 9PM 30th September"
 performed: PAREIDOLIA 2020 can be watched online, for free, from 30th September 2020
   until 31st October 2020.
 synopsis: |

@@ -4,12 +4,12 @@ permalink: /provocation/
 title: Provocation
 colour: "#FCB856"
 banner: /static/provocation/provocation_banner_text.png
-poster: /static/provocation/poster.png
+poster: /static/provocation/poster-portrait.png
 playwright: Thomas Heath
 project_date: November 2020
 external_link: "https://www.whitebeartheatre.co.uk/whatson/SHORTS%3A-A-Festival-of-New-Writing"
 external_link_text: "<i class='fa fa-ticket-alt'></i>&nbsp;Book Tickets"
-performed: "PROVOCATION will be performed at The White Bear Theatre, London, on 5th November, as part of Make It Beautiful's SHORTS festival."
+performed: "*Provocation* will be performed at The White Bear Theatre, London, on 5th November, as part of Make It Beautiful's SHORTS festival."
 synopsis: |
   Alexi is driven to a place beyond reality, called to a dimly lit room overlooking the city by a force they don't understand. All they find is Sam, a person who seems to know everything about them and willing to serve their every need. It's only when Alexi reveals their deepest secrets, that they are faced with the terrifying nature of what they've found.
 
