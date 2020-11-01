@@ -13,7 +13,7 @@
 						</div>
 						{% endif %}
 						<h2>{{ person.name }}<br><small class="text-muted font-weight-bold">{{ person.role }}</small></h2>
-						{{ person.bio | markdownify }}
+						{% if include.excerpt %}{{ person.excerpt | markdownify }}{% else %}{{ person.bio | markdownify }}{% endif %}
 						{% if person.headshot_attr %}<p><small><em>Photo: {{ person.headshot_attr }}</em></small></p>{% endif %}
 					</div>
 				</div>
