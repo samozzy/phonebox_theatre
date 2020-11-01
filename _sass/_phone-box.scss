@@ -47,6 +47,8 @@ $pb-navy: #23395B;
 	min-height: 5rem;
 	border-top-left-radius: 0.25rem !important;
     border-top-right-radius: 0.25rem !important;
+    overflow: hidden;
+    position: relative;
     &.card {
 	    @extend .p-2;
     }
@@ -55,8 +57,16 @@ $pb-navy: #23395B;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	position: relative;
 	height: 240px;
+	opacity: 1;
+	&:hover {
+		transform: scale(1.2);
+		opacity: 0.8;
+	}
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 .project-text {
