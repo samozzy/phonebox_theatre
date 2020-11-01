@@ -3,28 +3,10 @@ layout: outer
 --- 
 
 	<div class="container-fluid {% if layout.body_bg %}{{ layout.body_bg }}{% endif %}">
-		<div class="row {% if page.collection == 'projects' %}project-title bg-{{ page.title | slugify }} {% if page.dark_title %}text-dark{% endif %}{% endif %}">
+		<div class="row">
 			<div class="full-column text-center">
 				<h1 class="display-4">
-					{% if page.collection == 'projects' %}
-						{% if page.banner %}
-							<img src="{{ page.banner }}" class="img-fluid w-50" alt="{{ page.title }} {% if page.playwright %}{{ page.playwright }}{% endif %}">
-						{% else %}
-							{{ page.title | upcase }}<small class="font-weight-light mt-0">{% if page.playwright %}<br>by {{ page.playwright }}</small>{% endif %}
-						{% endif %}
-						{% if page.external_link %}
-							<br>
-							<a class="btn btn-dark btn-lg rounded-0 mt-3 text-light text-uppercase" role="button" href="{{ page.external_link }}">{{ page.external_link_text | default:"See more" }}</a>
-						{% endif %}
-						{% if page.donate %}
-							<br>
-							<a class="btn btn-dark btn-lg rounded-0 mt-3 text-light" role="button" href="{% link _content/donate.md %}">
-								 DONATE (via Square or PayPal)
-							</a>
-						{% endif %}
-					{% else %}
-						{{ page.title }}
-					{% endif %}
+					{{ page.title }}
 				</h1>
 			</div>
 		</div>
