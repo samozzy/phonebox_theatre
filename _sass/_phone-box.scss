@@ -80,6 +80,14 @@ $pb-navy: #23395B;
 	}
 }
 
+.hanging-image {
+	@extend .float-left, .mr-4, .mb-4;
+	width: 40%;
+	@media only screen and (max-width: map-get($grid-breakpoints, "md")){
+		width: 100%;
+	}
+}
+
 .team-headshot {
 	border-left: 25px solid $pb-sea-serpent;
 }
