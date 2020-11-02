@@ -17,6 +17,9 @@ $pb-navy: #23395B;
 .bg-secondary a:hover {
 	color: lighten($pb-sea-serpent, 20%);
 }
+.bg-pb-navy {
+	background: $pb-navy;
+}
 
 // Projects 
 .project-title { 
@@ -30,7 +33,7 @@ $pb-navy: #23395B;
     	font-weight: 300;
     }
   }
-  .card-footer.#{$name} {
+  .card-footer.#{$name}, .border-#{$name} {
   	border-color: $color !important;
   }
   a.bg-#{$name} {
@@ -41,9 +44,11 @@ $pb-navy: #23395B;
 }
 
 .project-header {
-	height: 5rem;
+	min-height: 5rem;
 	border-top-left-radius: 0.25rem !important;
     border-top-right-radius: 0.25rem !important;
+    overflow: hidden;
+    position: relative;
     &.card {
 	    @extend .p-2;
     }
@@ -52,7 +57,39 @@ $pb-navy: #23395B;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 100%;
+	height: 240px;
+	opacity: 1;
+	&:hover {
+		transform: scale(1.2);
+		opacity: 0.8;
+	}
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.project-text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	&.no-text {
+		bottom: 1rem;
+		right: 1rem;
+	}
+}
+
+.hanging-image {
+	@extend .float-left, .mr-4, .mb-4;
+	width: 40%;
+	@media only screen and (max-width: map-get($grid-breakpoints, "md")){
+		width: 100%;
+	}
+}
+
+.team-headshot {
+	border-left: 25px solid $pb-sea-serpent;
 }
 
 // Contrast tweaks
@@ -79,6 +116,42 @@ blockquote {
 
 .full-column {
 	@extend .col, .col-lg-8, .offset-lg-2;
+}
+
+.hero-image {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 4em;
+	background-attachment: fixed;
+	min-height: 25vh;
+	@media only screen and (min-width: map-get($grid-breakpoints, "sm")){
+		min-height: 40vh;
+	}
+	@media only screen and (min-width: map-get($grid-breakpoints, "md")){
+		background-position: 0 7em;
+	}
+	@media only screen and (min-width: map-get($grid-breakpoints, "xl")){
+		min-height: 60vh;
+	}
+}
+// Navigation
+.brand-mobile {
+  @extend .ml-2, .d-block, .d-md-none, .navbar-brand;
+}
+.brand-large {
+  @extend .navbar-brand, .d-none, .d-md-block;
+}
+
+// Typography
+.nav-item {
+	font-size: 1.5em;
+	font-weight: 300;
+	.nav-link {
+		color: $pb-off-white !important;
+	}
+	&.active {
+		font-weight: 500;
+	}
 }
 
 // Headshots

@@ -3,7 +3,7 @@ layout: projects
 permalink: /interface/
 title: Interface
 colour: "#FD8081"
-banner: /static/interface/interface_banner_text.png
+poster: /static/interface/interface_banner.png
 playwright: Thomas Heath
 project_date: June 2020
 performed: "INTERFACE will be performed at The Nottingham New Theatre once theatres are able to re-open following the Covid-19 pandemic."

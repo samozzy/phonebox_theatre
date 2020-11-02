@@ -1,0 +1,20 @@
+---
+layout: outer 
+title: Shows
+permalink: /shows/
+hero_image: /static/img/hero/34.png
+--- 
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="text-center display-4">Shows</h1>
+		</div>
+	</div>
+	<div class="row">
+		{% assign projects = site.projects | project_date_sort | reverse %}
+		{% for project in projects %}
+			{% include project_button.html project=project with_text=true %}
+		{% endfor %}
+	</div>
+</div>

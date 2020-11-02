@@ -6,13 +6,16 @@ contacts:
     icon: fa fa-envelope
   - name: Facebook 
     link: https://facebook.com/phoneboxtheatre/
-    icon: fab fa-facebook  
+    icon: fab fa-facebook 
+    header: "true" 
   - name: Twitter 
     link: https://twitter.com/phoneboxtheatre/
     icon: fab fa-twitter
+    header: "true"
   - name: Instagram
     link: https://Instagram.com/phoneboxtheatre/
     icon: fab fa-instagram 
+    header: "true"
   - name: YouTube
     link: https://www.youtube.com/channel/UCsZOUbIIFO02zx7Mu92dqJw
     icon: fab fa-youtube 
@@ -54,6 +57,7 @@ sass:
     load_paths:
       - _sass 
       - vendor/bundle/ruby/*/gems/bootstrap*/assets/stylesheets/
+      - /opt/build/cache/bundle/ruby/*/gems/bootstrap*/assets/stylesheets/
 
 collections:
   content:

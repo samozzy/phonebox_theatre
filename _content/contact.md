@@ -2,6 +2,7 @@
 layout: inner
 permalink: /contact/
 title: Contact Us
+hero_image: /static/img/hero/24.png
 --- 
 
 You can reach us via {% for s in site.contacts %}{% if forloop.first %}{% elsif forloop.last %} or {% else %}, {% endif %}[{{ s.name }}]({{ s.link }}){% endfor %}, or just fill in the form below and we'll get back to you as soon as possible.

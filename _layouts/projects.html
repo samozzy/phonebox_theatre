@@ -1,57 +1,79 @@
 --- 
-layout: inner
-body_bg: bg-primary
-alt_logo: true 
+layout: outer
 ---
 
-<h1>{{ page.project_date }}</h1>
+<div class="container mb-4">
+	<div class="row w-75 mx-auto">
+		<div class="col-12 text-center">
+			<h1 class="display-4">{{ page.title }} {% if page.playwright %}by {{ page.playwright }}{% endif %}</h1>
+		</div>
+		<div class="col-12">
+			{% if page.poster %}
+		    	<div class="hanging-image">
+		        	<img src="{{ page.poster }}" class="img-fluid shadow-sm" width="100%" alt="{{ page.title }} poster">
+				</div>
+			{% endif %}
 
-<h2>{{ page.performed | markdownify }}</h2>
+			<h2>{{ page.project_date }}</h1>
 
-<div class="ml-4"><em>{{ page.synopsis | markdownify | linebreaks }}</em></div>
+			<h3>{{ page.performed | markdownify }}</h3>
 
-{{ content | markdownify }}
-
-{% if page.cast %}
-<h1 class="text-center display-4 mt-4">The Cast</h1>
-<div class="row">
-	{% for person in page.cast %}
-		{% include person.html person=person img_width="50" headshot_class="headshot-cast" %}
-	{% endfor %}
+			<p><em>{{ page.synopsis | markdownify | linebreaks }}</em></p>
+			
+		</div>
+		<div class="col-12">
+			{{ content | markdownify }}
+		</div>
+	</div>
 </div>
-{% endif %}
-{% if page.team %}
-<h1 class="text-center display-4 mt-4">Production Team</h1>
-<div class="row">
-	{% for person in page.team %}
-		{% include person.html person=person col_class="col-sm-6" img_width="30" headshot_class="headshot-team"%}
-	{% endfor %}
+<div class="container-fluid bg-primary">
+	{% if page.cast %}
+	<div class="row">
+		<div class="col-12">
+			<h1 class="text-center display-4 mt-4">The Cast</h1>
+		</div>
+	</div>
+	<div class="row w-75 mx-auto">
+		{% for person in page.cast %}
+			{% include person.html person=person img_width="50" headshot_class="headshot-cast" %}
+		{% endfor %}
+	</div>
+	{% endif %}
+	{% if page.team %}
+	<div class="row">
+		<div class="col-12">
+			<h1 class="text-center display-4 mt-4">Production Team</h1>
+		</div>
+	</div>
+	<div class="row w-75 mx-auto">
+		{% for person in page.team %}
+			{% include person.html person=person col_class="col-sm-6" img_width="30" headshot_class="headshot-team"%}
+		{% endfor %}
+	</div>
+	{% endif %}
 </div>
-{% endif %}
-<hr>
 
 {% assign num_projects = site.projects.size %}
 {% assign num_listed = 0 %}
 {% if num_projects > 1 %}
-	<h2>Latest Shows</h2>
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-12 text-center">
+			<h1>Latest Shows</h1>
+		</div>
+	</div>
 	<div class="row mb-4 no-gutters">
 		<div class="card-deck mx-0 h-100 col">
 			{% assign projects = site.projects | project_date_sort | reverse %}
 			{% for project in projects %}
+			 <!-- <img src="{{ project.poster }}" /> -->
 				{% if num_listed >= 2 %}{% break %}{% endif %}
 				{% unless project.permalink == page.permalink %}
-					<div class="card bg-secondary p-0 mx-2 border-{{ project.title | slugify }}">
-						<a class="project-header bg-{{ project.title | slugify }}" href="{{ project.permalink }}" title="{{ project.title }}" aria-label="{{ project.title }}">
-							<div class="project-background" style="background-image: url({{ project.banner }});"></div>
-						</a>
-						<div class="card-body">
-							<p class="mb-1">{{ project.performed }}</p>
-						</div>
-						<div class="card-footer text-center {{ project.title | slugify }}"><span>{{ project.project_date }}</span></div>
-					</div>
+					{% include project_button.html project=project %}
 					{% assign num_listed = num_listed | plus: 1 %}
 				{% endunless %}
 			{% endfor %}
 		</div>
 	</div>
+</div>
 {% endif %}

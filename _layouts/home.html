@@ -4,25 +4,26 @@ layout: outer
 
     <div class="container-fluid">
 		<div class="row">
-			<div class="col-8 text-center my-4 mx-auto">
-				<a href="/"><img src="{{ site.logo_path }}" class="w-75" alt="Phone Box Theatre Logo"></a>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-12 col-lg-8 offset-lg-2" id="section_intro">
-				<h1>{{ content }}</h1>
-				<div class="w-100 text-center">
-					{% assign pareidolia = site.projects | where: "permalink", "/pareidolia/" | first %}
-					<a class="mx-auto w-75 btn bg-pareidolia-2020 btn-lg rounded-0" role="button" href="{{ pareidolia.external_link }}"><strong>PAREIDOLIA 2020</strong> is available to watch <strong>online, for free</strong> from 30th September until 31st October. <br><strong class="text-uppercase">Watch now</strong> <i class="fab fa-youtube"></i></a><br>
-					<a class="mx-auto btn w-50 bg-pareidolia-2020 btn-lg rounded-0 my-3" role="button" href="{% link _projects/pareidolia.md %}">Read more about <strong>PAREIDOLIA 2020</strong></a><br>
-					<a class="mx-auto btn w-50 btn-outline-primary btn-lg rounded-0" role="button" href="#team"><i class="fa fa-fw fa-arrow-down" aria-hidden="True"></i>&nbsp;Or scroll to learn more about us...</a>
-				</div>
+				<h1>{{ content }}</h1> 
 			</div>
 		</div>
 	</div>
-	<hr class="w-25">
+	<div class="container-fluid bg-primary pb-4 mt-3" id="section_shows">
+		<div class="row pt-4">
+			<div class="col text-center">
+				<h1 id="shows" class="display-3">Phone Box Shows</h1>
+			</div>
+		</div>
+		{% assign projects = site.projects | project_date_sort | reverse %}
+		<div class="row no-gutters">
+			{% for project in projects %}
+				{% include project_button.html project=project %}
+			{% endfor %}
+		</div>
+	</div>
 	<div class="container-fluid" id="section_team">
-		<div class="row my-3">
+		<div class="row my-3 pt-3">
 			<div class="col text-center">
 				<h1 id="team" class="display-3">Phone Box Team</h1>
 			</div>
@@ -30,41 +31,8 @@ layout: outer
 		<div class="row mx-lg-5">
 			{{ site.people }}
 			{% for person in site.data.people %}
-				{% include person.html person=person phonebox=true headshot_class="headshot-pbt" %}
+				{% include person.html person=person phonebox=true excerpt=true headshot_class="headshot-pbt" %}
 			{% endfor %}
+			<a class="btn btn-primary btn-block btn-lg rounded-0 mb-4" role="button" href="/about/">Read more about the team</a>
 		</div>
-	</div>
-	<div class="container-fluid bg-primary" id="section_shows">
-		<div class="row pt-4">
-			<div class="col text-center">
-				<h1 id="shows" class="display-3">Phone Box Shows</h1>
-			</div>
-		</div>
-		{% assign projects = site.projects | project_date_sort | reverse %}
-		{% for project in projects %}
-			<div class="row bg-{{ project.title | slugify }} mb-4">
-				<div class="full-column text-center">
-					{% if project.banner and project.banner != empty %}
-						<img src="{{ project.banner }}" class="img-fluid w-50 my-4" alt="{{ project.title }} {% if project.playwright and project.playwright != empty %}by {{ project.playwright }}{% endif %}">
-					{% else %}
-						<h1 class="display-4">{{ project.title | upcase }} {% if project.playwright and project.playwright != empty %}<small class="font-weight-light mt-0"><br>by {{ project.playwright }}</small>{% endif %}</h1>
-					{% endif %}
-				</div>
-			</div>
-
-			<div class="row mx-lg-5">
-				<div class="col">
-					<h2>{{ project.performed }}</h2>
-					<div class="ml-4">
-						<em>{{ project.synopsis | markdownify }}</em>
-					</div>
-					<h3>{{ project.content | markdownify }}</h3>
-				</div>
-			</div>
-			<div class="row mt-1 mb-3">
-				<div class="full-column text-center">
-					<a class="btn btn-lg btn-block rounded-0 text-dark bg-{{ project.title | slugify }}" role="button" href="{{ project.permalink }}">See more</a>
-				</div>
-			</div>
-		{% endfor %}
 	</div>
