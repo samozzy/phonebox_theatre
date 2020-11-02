@@ -44,7 +44,7 @@
               {% if item.title == 'Socials' %}
                 {% assign socials = site.contacts | where: "header", "true" %}
                 {% for social in socials %}
-                 <a href="{{ social.href }}"><i class="{{ social.icon }}" aria-label="{{ social.name }}"></i></a>&nbsp;
+                 <a href="{{ social.href }}"><i class="{{ social.icon }}" aria-label="{{ social.name }}"></i><span class="sr-only">{{ social.name }}</span></a>&nbsp;
                 {% endfor %}
               {% else %}
               <a class="{% if item.logo == true %}brand-large{% else %}nav-link{% endif %}" href="{{ item.href }}">
