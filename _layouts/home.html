@@ -37,7 +37,7 @@ layout: outer
 				<h1 id="shows" class="display-3">Phone Box Shows</h1>
 			</div>
 		</div>
-		{% assign projects = site.projects | project_date_sort | reverse %}
+		{% assign projects = site.projects | reverse %}
 		{% for project in projects %}
 			<div class="row bg-{{ project.title | slugify }} mb-4">
 				<div class="full-column text-center">

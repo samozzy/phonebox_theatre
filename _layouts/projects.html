@@ -4,9 +4,9 @@ body_bg: bg-primary
 alt_logo: true 
 ---
 
-<h1>{{ page.project_date }}</h1>
+<!-- <h1>{{ page.project_date }}</h1> -->
 
-<h2>{{ page.performed | markdownify }}</h2>
+<h1>{{ page.performed | markdownify }}</h1>
 
 <div class="ml-4"><em>{{ page.synopsis | markdownify | linebreaks }}</em></div>
 
@@ -36,7 +36,7 @@ alt_logo: true
 	<h2>Latest Shows</h2>
 	<div class="row mb-4 no-gutters">
 		<div class="card-deck mx-0 h-100 col">
-			{% assign projects = site.projects | project_date_sort | reverse %}
+			{% assign projects = site.projects | reverse %}
 			{% for project in projects %}
 				{% if num_listed >= 2 %}{% break %}{% endif %}
 				{% unless project.permalink == page.permalink %}

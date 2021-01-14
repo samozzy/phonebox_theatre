@@ -5,7 +5,7 @@ title: Provocation
 colour: "#FCB856"
 banner: "/static/provocation/provocation_banner_text.png"
 playwright: Thomas Heath
-project_date: Postponed until early 2021
+project_date: 2021
 external_link: https://www.whitebeartheatre.co.uk/whatson/SHORTS%3A-A-Festival-of-New-Writing
 external_link_text: "<i class='fa fa-ticket-alt'></i>&nbsp;Book Tickets"
 performed: PROVOCATION will be performed in 2021 at The White Bear Theatre, London,
