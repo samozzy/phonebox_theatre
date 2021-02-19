@@ -11,6 +11,10 @@
 
       gtag('config', 'UA-179405465-1');
     </script>
+    {% if page.recaptcha %}
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {% endif %}
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

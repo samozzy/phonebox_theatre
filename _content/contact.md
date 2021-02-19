@@ -1,5 +1,6 @@
 ---
 layout: inner
+recaptcha: true 
 permalink: /contact/
 title: Contact Us
 --- 
