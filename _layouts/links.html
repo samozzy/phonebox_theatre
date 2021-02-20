@@ -1,0 +1,19 @@
+---
+layout: inner 
+--- 
+
+<div class="container">
+	{% if page.links %}
+		{% for link in page.links %}
+			<div class="row my-4">
+				<div class="col-12 d-flex">
+					<a class="btn btn-primary rounded-0 w-75 mx-auto btn-lg" role="button" href="{{ link.link }}">{{ link.title }}</a>
+				</div>
+			</div>
+		{% endfor %}
+	{% else %}
+		<div class="col-12 col-lg-8 offset-lg-2">
+			<p class="text-center lead"><em>There aren't any links at the moment, why don't you try <a href="/">the homepage?</a></em></p>
+		</div>
+	{% endif %}
+</div>
