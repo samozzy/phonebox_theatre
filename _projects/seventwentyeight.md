@@ -34,6 +34,8 @@ cast:
       icon: fab fa-instagram 
   bio: |
     Boo is an actor based in London, and an MA graduate from the University of Nottingham. She has acted professionally since 2005, having made her debut in Ol Parker's 'Imagine Me & You', and has since worked on projects ranging from fringe and immersive theatre, to indie films, short films and TV.
+
+    Boo is represented by [APM Associates](https://apmassociates.net) and can be found on [Spotlight](https://www.spotlight.com/5090-7863-7617)
 - name: Callum Walker
   headshot: "/static/seventwentyeight/callum.jpg"
   contact:
@@ -109,7 +111,10 @@ team:
   role: Co-Producer & Web Developer
   headshot: "/static/img/headshots/sam.jpg"
   headshot_attr: Miguel Barrulas
+
+thanks:
 - name: Jack Ellis
-  role: Web Consultant 
+  role: Website Development (AJAX) 
+
 
 ---
