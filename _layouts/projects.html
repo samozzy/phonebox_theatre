@@ -42,14 +42,14 @@ alt_logo: true
 			{% for project in projects %}
 				{% if num_listed >= 2 %}{% break %}{% endif %}
 				{% unless project.permalink == page.permalink %}
-					<div class="card bg-secondary p-0 mx-2 border-{{ project.title | slugify }}">
-						<a class="project-header bg-{{ project.title | slugify }}" href="{{ project.permalink }}" title="{{ project.title }}" aria-label="{{ project.title }}">
+					<div class="card bg-secondary p-0 mx-2 border-project-{{ project.title | slugify }}">
+						<a class="project-header bg-project-{{ project.title | slugify }}" href="{{ project.permalink }}" title="{{ project.title }}" aria-label="{{ project.title }}">
 							<div class="project-background" style="background-image: url({{ project.banner }});"></div>
 						</a>
 						<div class="card-body">
 							<p class="mb-1">{{ project.performed }}</p>
 						</div>
-						<div class="card-footer text-center {{ project.title | slugify }}"><span>{{ project.project_date }}</span></div>
+						<div class="card-footer text-center project-{{ project.title | slugify }}"><span>{{ project.project_date }}</span></div>
 					</div>
 					{% assign num_listed = num_listed | plus: 1 %}
 				{% endunless %}
