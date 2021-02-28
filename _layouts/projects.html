@@ -16,7 +16,9 @@ alt_logo: true
 <h1 class="text-center display-4 mt-4">The Cast</h1>
 <div class="row">
 	{% for person in page.cast %}
-		{% include person.html person=person img_width="50" headshot_class="headshot-cast" %}
+		{% assign show_slug = page.title | slugify %}
+		{% assign headshot_class = "headshot-cast project-" | append: show_slug %}
+		{% include person.html person=person img_width="50" headshot_class=headshot_class %}
 	{% endfor %}
 </div>
 {% endif %}

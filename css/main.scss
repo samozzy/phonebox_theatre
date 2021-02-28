@@ -4,7 +4,7 @@
 // Project variables 
 $pbt-projects: (
 	{% for project in site.projects %}
-		"{{ project.title | slugify }}": {{ project.colour }},
+		"project-{{ project.title | slugify }}": {{ project.colour }},
 	{% endfor %}
 );
 $grid-breakpoints: (
