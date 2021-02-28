@@ -6,6 +6,8 @@
 								<img src="{{ person.headshot }}" class="pl-2 mb-2 w-100 rounded-circle" alt="Picture of {{ person.name }}">
 								{% if include.phonebox %}
 									<a href="mailto:{{ person.email }}@phoneboxtheatre.co.uk" title="Contact {{ person.name }} via email"><i aria-label="Email {{ person.name }}" class="fa fa-envelope fa-fw fa-lg"></i><span class="sr-only">Email {{ person.name }}</a>
+								{% endif %}
+								{% if person.contact %}
 									{% for c in person.contact %}
 										<a href="{{ c.link }}"><span class="sr-only">Contact {{ person.name }} on {{ c.type }}</span><i  class="{{ c.icon }} fa-fw fa-lg"></i></a>
 									{% endfor %}
