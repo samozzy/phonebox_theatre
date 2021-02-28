@@ -91,7 +91,7 @@ cast:
 - name: Yasmine Dankwah 
   headshot: "/static/seventwentyeight/yasmine.jpg"
   contact:
-    - link: "https://instagram.com/yasmine__7/"
+    - link: "https://instagram.com/yasmine___7/"
       type: Instagram 
       icon: fab fa-instagram 
   bio: |
