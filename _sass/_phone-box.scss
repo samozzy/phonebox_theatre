@@ -30,13 +30,18 @@ $pb-navy: #23395B;
     	font-weight: 300;
     }
   }
-  .card-footer.#{$name} {
+  .card-footer.#{$name}, .border-#{$name} {
   	border-color: $color !important;
   }
   a.bg-#{$name} {
     &:hover {
     	background-color: darken($color, 15%) !important;
     }
+  }
+  .headshot-cast.#{$name} img {
+  	@extend .border-#{$name};
+  	border-width: 5px;
+  	border-style: solid;
   }
 }
 
@@ -82,6 +87,11 @@ blockquote {
 }
 
 // Headshots
+.headshot-pbt, .headshot-cast, .headshot-team {
+	img {
+		@extend .shadow-sm;
+	}
+}
 .headshot-pbt {
 	width: 40%;
 	@media only screen and (min-width: map-get($grid-breakpoints, "md")){

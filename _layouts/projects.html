@@ -16,7 +16,9 @@ alt_logo: true
 <h1 class="text-center display-4 mt-4">The Cast</h1>
 <div class="row">
 	{% for person in page.cast %}
-		{% include person.html person=person img_width="50" headshot_class="headshot-cast" %}
+		{% assign show_slug = page.title | slugify %}
+		{% assign headshot_class = "headshot-cast project-" | append: show_slug %}
+		{% include person.html person=person img_width="50" headshot_class=headshot_class %}
 	{% endfor %}
 </div>
 {% endif %}
@@ -26,6 +28,16 @@ alt_logo: true
 	{% for person in page.team %}
 		{% include person.html person=person col_class="col-sm-6" img_width="30" headshot_class="headshot-team"%}
 	{% endfor %}
+</div>
+{% endif %}
+{% if page.thanks %}
+<h2>Special Thanks</h3>
+<div class="row">
+	<div class="col">
+		{% for person in page.thanks %}
+			<p>{{ person.name }} - {{ person.role }}</p>
+		{% endfor %}
+	</div>
 </div>
 {% endif %}
 <hr>
@@ -40,14 +52,14 @@ alt_logo: true
 			{% for project in projects %}
 				{% if num_listed >= 2 %}{% break %}{% endif %}
 				{% unless project.permalink == page.permalink %}
-					<div class="card bg-secondary p-0 mx-2 border-{{ project.title | slugify }}">
-						<a class="project-header bg-{{ project.title | slugify }}" href="{{ project.permalink }}" title="{{ project.title }}" aria-label="{{ project.title }}">
+					<div class="card bg-secondary p-0 mx-2 border-project-{{ project.title | slugify }}">
+						<a class="project-header bg-project-{{ project.title | slugify }}" href="{{ project.permalink }}" title="{{ project.title }}" aria-label="{{ project.title }}">
 							<div class="project-background" style="background-image: url({{ project.banner }});"></div>
 						</a>
 						<div class="card-body">
 							<p class="mb-1">{{ project.performed }}</p>
 						</div>
-						<div class="card-footer text-center {{ project.title | slugify }}"><span>{{ project.project_date }}</span></div>
+						<div class="card-footer text-center project-{{ project.title | slugify }}"><span>{{ project.project_date }}</span></div>
 					</div>
 					{% assign num_listed = num_listed | plus: 1 %}
 				{% endunless %}

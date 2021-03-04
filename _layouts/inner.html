@@ -9,7 +9,7 @@ layout: outer
 				</a>
 			</div>
 		</div>
-		<div class="row {% if page.collection == 'projects' %}project-title bg-{{ page.title | slugify }} {% if page.dark_title %}text-dark{% endif %}{% endif %}">
+		<div class="row {% if page.collection == 'projects' %}project-title bg-project-{{ page.title | slugify }} {% if page.dark_title %}text-dark{% endif %}{% endif %}">
 			<div class="full-column text-center">
 				<h1 class="display-4">
 					{% if page.collection == 'projects' %}
