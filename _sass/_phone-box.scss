@@ -38,10 +38,12 @@ $pb-navy: #23395B;
     	background-color: darken($color, 15%) !important;
     }
   }
-  .headshot-cast.#{$name} img {
-  	@extend .border-#{$name};
-  	border-width: 5px;
-  	border-style: solid;
+  .headshot-cast.#{$name}, .headshot-team.#{$name} {
+  	img {
+	  	@extend .border-#{$name};
+	  	border-width: 5px;
+	  	border-style: solid;
+	}
   }
 }
 
