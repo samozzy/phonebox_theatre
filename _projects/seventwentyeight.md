@@ -145,4 +145,4 @@ It’s 7:28. Work is done and the evening is ahead of you. What are you going to
 In two minutes’ time, at 7:30, you might have been about to sit down in a theatre ready to watch a play, but things have changed. It’s 7:28, or any time other than 7:30, so what happens next?
 
   
-_7:28_ is an online treasure hunt across the internet -- solve the riddle, unlock the next video, and jump into a new world. _7:28_ is about comfort, contentment and feeling connected. This is your journey through these stories. It is about you in those moments on your own, and about you in those moments spent together.
+_7:28_ is an online treasure hunt across the internet &mdash; solve the riddle, unlock the next video, and jump into a new world. _7:28_ is about comfort, contentment and feeling connected. This is your journey through these stories. It is about you in those moments on your own, and about you in those moments spent together.
