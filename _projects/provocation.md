@@ -5,11 +5,11 @@ title: Provocation
 colour: "#FCB856"
 banner: "/static/provocation/provocation_banner_text.png"
 playwright: Thomas Heath
-project_date: 2021
+project_date: "2021"
 external_link: https://www.whitebeartheatre.co.uk/whatson/SHORTS%3A-A-Festival-of-New-Writing
 external_link_text: "<i class='fa fa-ticket-alt'></i>&nbsp;Book Tickets"
-performed: PROVOCATION will be performed in 2021 at The White Bear Theatre, London,
-  as part of Make It Beautiful's SHORTS festival.
+performed: PROVOCATION will be performed on 17th June 2021 at The White Bear Theatre,
+  London, as part of Make It Beautiful's SHORTS festival.
 synopsis: 'Alexi is driven to a place beyond reality, called to a dimly lit room overlooking
   the city by a force they don''t understand. All they find is Sam, a person who seems
   to know everything about them and willing to serve their every need. It''s only
