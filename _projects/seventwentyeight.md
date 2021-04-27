@@ -24,6 +24,19 @@ cast:
     on [@ArtistsMakeMoney](https://instagram.com/artistsmakemoney/). \n\nShe is currently
     studying an MA in Theatre for Community and Education at Mountview, and will be
     completing her Stage Management training at National Youth Theatre in August 2021.\n"
+- name: Rohan Rakhit
+  headshot: "/static/seventwentyeight/rohan.jpg"
+  contact:
+  - link: https://twitter.com/rrakhit/
+    type: Twitter
+    icon: fab fa-twitter
+  - link: https://instagram.com/rohan.rakhit/
+    type: Instagram
+    icon: fab fa-instagram
+  bio: |
+    Rohan is a London-based actor who has recently graduated from the University of Nottingham. Over the last three years Rohan has been heavily involved with the Nottingham New Theatre performing in several productions, including his starring role in Bill Hayes's 'tl;dr' as part of the theatre's quarantine season.
+
+    Rohan has been an active member of the National Youth Theatre for several years and performed as Kabir in Tanika Gupta's 'White Boy' in Leicester Square as part of the centenary of the organisation. As well as this, he has had lead roles in several short films for companies such as Future 16 Productions, Chronic Insanity Theatre Company and LINL Productions.
 - name: Boo Jackson
   headshot: "/static/seventwentyeight/boo.jpg"
   contact:
@@ -74,19 +87,6 @@ cast:
     or [Instagram](https://instagram.com/jesshasbooks/) under @jesshasbooks.
 
 '
-- name: Rohan Rakhit
-  headshot: "/static/seventwentyeight/rohan.jpg"
-  contact:
-  - link: https://twitter.com/rrakhit/
-    type: Twitter
-    icon: fab fa-twitter
-  - link: https://instagram.com/rohan.rakhit/
-    type: Instagram
-    icon: fab fa-instagram
-  bio: |
-    Rohan is a London-based actor who has recently graduated from the University of Nottingham. Over the last three years Rohan has been heavily involved with the Nottingham New Theatre performing in several productions, including his starring role in Bill Hayes's 'tl;dr' as part of the theatre's quarantine season.
-
-    Rohan has been an active member of the National Youth Theatre for several years and performed as Kabir in Tanika Gupta's 'White Boy' in Leicester Square as part of the centenary of the organisation. As well as this, he has had lead roles in several short films for companies such as Future 16 Productions, Chronic Insanity Theatre Company and LINL Productions.
 - name: Sam Morris
   headshot: "/static/seventwentyeight/sam.jpg"
   contact:
@@ -138,6 +138,8 @@ team:
 thanks:
 - name: Jack Ellis
   role: Website Development (AJAX)
+- name: Amy Crighton
+  role: Additional Photography
 
 ---
 It’s 7:28. Work is done and the evening is ahead of you. What are you going to do? Watch some TV? Look at some photos? Scroll down the socials? Look at the stars? You could do anything. Take a seat. Grab your laptop. Are you comfortable? Are you relaxed?
