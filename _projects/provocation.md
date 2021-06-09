@@ -18,22 +18,26 @@ synopsis: 'Alexi is driven to a place beyond reality, called to a dimly lit room
 
 '
 cast:
-- name: Joseph Martin
-  role: Alexi
-  headshot: "/static/provocation/joseph.jpg"
-  bio: |
-    Joseph is an actor whose previous credits include Jeff Wayne's 'The War of the Worlds', Sir Quentin Blake's 'The Green Ship' (UK Tour), 'Middled Aged Rent' (Hope Theatre), and 'The Laramie Project' (Castle Theatre).
+- name: Boo Jackson 
+  role: Sam 
+- name: Miguel Barrulas
+  role: Alexi 
+# - name: Joseph Martin
+#   role: Alexi (R&D Period)
+#   headshot: "/static/provocation/joseph.jpg"
+#   bio: |
+#     Joseph is an actor whose previous credits include Jeff Wayne's 'The War of the Worlds', Sir Quentin Blake's 'The Green Ship' (UK Tour), 'Middled Aged Rent' (Hope Theatre), and 'The Laramie Project' (Castle Theatre).
 
-    Joseph trained at East 15 Acting School as well as the National Youth Theatre, and has also got voice and presenting work for BBC Radio 2 and Warner Bros. Studios under his belt.
-- name: Rohan Rakhit
-  role: Sam
-  headshot: "/static/provocation/rohan.jpeg"
-  bio: |
-    Rohan is a London-based actor who has recently graduated from the University of Nottingham. Over the last three years Rohan has been heavily involved with the Nottingham New Theatre performing in several productions, including his starring role in Bill Hayes's 'tl;dr' as part of the theatre's quarantine season.
+#     Joseph trained at East 15 Acting School as well as the National Youth Theatre, and has also got voice and presenting work for BBC Radio 2 and Warner Bros. Studios under his belt.
+# - name: Rohan Rakhit
+#   role: Sam (R&D Period)
+#   headshot: "/static/provocation/rohan.jpeg"
+#   bio: |
+#     Rohan is a London-based actor who has recently graduated from the University of Nottingham. Over the last three years Rohan has been heavily involved with the Nottingham New Theatre performing in several productions, including his starring role in Bill Hayes's 'tl;dr' as part of the theatre's quarantine season.
 
-    Rohan has been an active member of the National Youth Theatre for several years and performed as Kabir in Tanika Gupta's 'White Boy' in Leicester Square as part of the centenary of the organisation. As well as this, he has had lead roles in several short films for companies such as Future 16 Productions, Chronic Insanity Theatre Company and LINL Productions.
+#     Rohan has been an active member of the National Youth Theatre for several years and performed as Kabir in Tanika Gupta's 'White Boy' in Leicester Square as part of the centenary of the organisation. As well as this, he has had lead roles in several short films for companies such as Future 16 Productions, Chronic Insanity Theatre Company and LINL Productions.
 
-    Rohan is delighted to be working with the Phone Box Theatre team on this exciting project and cannot wait to be performing at a theatre in front of a live audience once more.
+#     Rohan is delighted to be working with the Phone Box Theatre team on this exciting project and cannot wait to be performing at a theatre in front of a live audience once more.
 team:
 - name: Thomas Heath
   role: Playwright
@@ -54,5 +58,10 @@ team:
   role: Co-Producer
   headshot: "/static/img/headshots/sam.jpg"
   headshot_attr: Miguel Barrulas
+thanks: 
+  - name: Joseph Martin
+    role: Alexi (R&D)
+  - name: Rohan Rakhit 
+    role: Sam (R&D)
 
 ---
