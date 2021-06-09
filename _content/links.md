@@ -5,6 +5,8 @@ layout: links
 links:
 - title: HOMEPAGE
   link: "/"
+- title: BOOK TICKETS FOR PROVOCATION @ THE WHITE BEAR (17th JUNE)
+  link: "https://www.whitebeartheatre.co.uk/whatson/SHORTS%3A-A-Festival-of-New-Writing/"
 - title: 'UPCOMING SHOW: 7:28'
   link: "/seventwentyeight/"
 - title: 'REVIEW: Pareidolia 2020 by HerCampus Nottingham'
