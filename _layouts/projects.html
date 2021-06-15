@@ -16,9 +16,10 @@ alt_logo: true
 {% if page.cast %}
 <h1 class="text-center display-4 mt-4">The Cast</h1>
 <div class="row">
+	{% assign cast_col_class = page.cast_column_class | default: 'col-sm-6' %}
 	{% for person in page.cast %}
 		{% assign headshot_class = "headshot-cast project-" | append: show_slug %}
-		{% include person.html person=person img_width="50" headshot_class=headshot_class %}
+		{% include person.html person=person col_class=cast_col_class img_width="50" headshot_class=headshot_class %}
 	{% endfor %}
 </div>
 {% endif %}
@@ -27,7 +28,7 @@ alt_logo: true
 <div class="row">
 	{% for person in page.team %}
 		{% assign headshot_class = "headshot-team project-" | append: show_slug %}
-		{% include person.html person=person col_class="col-sm-6" img_width="30" headshot_class=headshot_class %}
+		{% include person.html person=person col_class='col-sm-6' img_width="30" headshot_class=headshot_class %}
 	{% endfor %}
 </div>
 {% endif %}
